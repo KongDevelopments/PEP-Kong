@@ -17,7 +17,7 @@ if (os.getenv(env_ssl_verify) and  string.lower(os.getenv(env_ssl_verify)) == "f
     ssl_verify = false
 end
 
-local request_timeout = 500
+local request_timeout = 5000
 if(os.getenv(env_request_timeout)) then
     request_timeout = tonumber(os.getenv(env_request_timeout))
 end
